@@ -19,14 +19,19 @@ function my_theme_register_required_plugins() {
 			'slug'     => 'wp-scss',
 			'required' => true,
 		),
-		array(
+		/* array(
 			'name'     => 'WooCommerce',
 			'slug'     => 'woocommerce',
 			'required' => false,
-		),
+		), */
 		array(
 			'name'     => 'Contact Form 7',
 			'slug'     => 'contact-form-7',
+			'required' => false,
+		),
+		array(
+			'name'     => 'Better Font Awesome',
+			'slug'     => 'better-font-awesome',
 			'required' => false,
 		),
 		array(
@@ -34,66 +39,85 @@ function my_theme_register_required_plugins() {
 			'slug'     => 'wp-migrate-db',
 			'required' => false,
 		),
-		array(
-			'name'     => 'Kwayy html sitemap',
-			'slug'     => 'kwayy-html-sitemap',
+		/* array(
+			'name'     => 'Regenerate Thumbnails',
+			'slug'     => 'regenerate-thumbnails',
 			'required' => false,
-		),
-		array(
+		), */
+		/* array(
 			'name'     => 'Really Simple CAPTCHA',
 			'slug'     => 'really-simple-captcha',
 			'required' => false,
-		),
-		array(
-			'name'     => 'Better WordPress Minify',
-			'slug'     => 'bwp-minify',
-			'required' => false,
-		),
+		), */
+		// array(
+		// 	'name'     => 'Better WordPress Minify',
+		// 	'slug'     => 'bwp-minify',
+		// 	'required' => false,
+		// ),
 		array(
 			'name'     => 'Activity log',
 			'slug'     => 'aryo-activity-log',
 			'required' => false,
 		),
-		array(
-			'name'     => 'Quick Bulk Post & Page Creator',
-			'slug'     => 'quick-bulk-post-page-creator',
-			'required' => false,
-		),
-		array(
-			'name'     => 'Duplicate post',
-			'slug'     => 'duplicate-post',
-			'required' => false,
-		),
+		// array(
+		// 	'name'     => 'Quick Bulk Post & Page Creator',
+		// 	'slug'     => 'quick-bulk-post-page-creator',
+		// 	'required' => false,
+		// ),
+		// array(
+		// 	'name'     => 'Duplicate post',
+		// 	'slug'     => 'duplicate-post',
+		// 	'required' => false,
+		// ),
 		array(
 			'name'     => 'TinyMCE Advanced',
 			'slug'     => 'tinymce-advanced',
 			'required' => false,
 		),
-		array(
-			'name'     => 'WP-PageNavi',
-			'slug'     => 'wp-pagenavi',
-			'required' => false,
-		),
-		array(
+		// array(
+		// 	'name'     => 'WP-PageNavi',
+		// 	'slug'     => 'wp-pagenavi',
+		// 	'required' => false,
+		// ),
+		/* array(
 			'name'     => 'Breadcrumb NavXT',
 			'slug'     => 'breadcrumb-navxt',
 			'required' => false,
-		),
-		array(
+		), */
+		/* array(
 			'name'     => 'Yoast SEO',
 			'slug'     => 'wordpress-seo',
 			'required' => false,
-		),
+		), */
 	
-		array(
+		/* array(
 			'name'     => 'Redirection',
 			'slug'     => 'redirection',
 			'required' => false,
+		), */
+		// array(
+		// 	'name'     => 'Simple Sitemap',
+		// 	'slug'     => 'simple-sitemap',
+		// 	'required' => false,
+		// ),
+		// array(
+		// 	'name'     => 'Wp optimize',
+		// 	'slug'     => 'wp-optimize',
+		// 	'required' => false,
+		// ),
+		// array(
+	 //   'name'     => 'Advanced Custom Fields : CPT Options Pages',
+	 //   'slug'     => 'acf-cpt-options-pages',
+	 //   'required' => false,
+	 //  ),
+		array(
+			'name'     => 'WP Emmet',
+			'slug'     => 'wp-emmet',
+			'required' => false,
 		),
-		
-			array(
-			'name'     => 'Simple custom-post-order',
-			'slug'     => 'simple-custom-post-order',
+		array(
+			'name'     => 'Add Logo to Admin',
+			'slug'     => 'add-logo-to-admin',
 			'required' => false,
 		)
 	);
