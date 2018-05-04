@@ -31,7 +31,7 @@ $font: 'font_regular', Helvetica, Arial, sans-serif;
 /* FONTS
    ========================================================================== */
 //custom icon fonts
-@include declare-font('font-layout', 'font-name', 'font-weight', 'font-style');
+// @include declare-font('font-name', 'font-layout', 'font-weight', 'font-style');
 /* MAIN  FILES
    ========================================================================== */
 @import 'components/01_reset';
