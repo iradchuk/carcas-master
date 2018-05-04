@@ -13,29 +13,30 @@ $(document).ready(function () {
 //         disable: 'mobile',
     // anchor: 'top-bottom'
 //     });
-  //   var mySwiper = new Swiper ('.swiper-container', {
-  //   // Optional parameters
-  //   direction: 'vertical',
-  //   loop: true,
-
-  //   // If we need pagination
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //   },
-
-  //   // Navigation arrows
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-
-  //   // And if we need scrollbar
-  //   scrollbar: {
-  //     el: '.swiper-scrollbar',
-  //   },
-  // })
-    // $('select').selectric({
-    //     disableOnMobile: false
-    // });
+    
 });
 /* end ready*/
+$(window).on('load', function () {
+    //swiper_example
+    // var swiper_example = new Swiper('.swiper_example', {
+    //     loop: true,
+    //     speed: 1000,
+    //     autoplay: {
+    //         delay: 4000
+    //     },
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         dynamicBullets: true,
+    //         clickable: true
+    //     },
+    //     navigation: {
+    //         prevEl: '.swiper-prev',
+    //         nextEl: '.swiper-next'
+    //     },
+    //     on: {
+    //         init: function () {
+    //             $('.swiper_example').addClass('slider_loaded');
+    //         }
+    //     }
+    // });
+});

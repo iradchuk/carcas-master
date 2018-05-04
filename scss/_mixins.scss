@@ -306,6 +306,8 @@
     transform: translateY(-($burger-gutter + $burger-height)) rotate(-45deg);
   }
 }
+
+
 @function strip-units($value) {
   @return ($value / ($value * 0 + 1));
 }

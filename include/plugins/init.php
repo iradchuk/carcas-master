@@ -25,16 +25,6 @@ function my_theme_register_required_plugins() {
 			'required' => false,
 		),
 		array(
-			'name'     => 'WP Emmet',
-			'slug'     => 'wp-emmet',
-			'required' => false,
-		),
-		array(
-			'name'     => 'Better Font Awesome',
-			'slug'     => 'better-font-awesome',
-			'required' => false,
-		),
-		array(
 			'name'     => 'Contact Form 7',
 			'slug'     => 'contact-form-7',
 			'required' => false,

@@ -1,11 +1,11 @@
-.desctop-hide {
+.desctop_hide {
   display: none;
 }
 @include for-size(row) {
-  .mobile-hide {
+  .mobile_hide {
     display: none;
   }
-  .desctop-hide {
+  .desctop_hide {
     display: block;
   }
   .burger {
@@ -29,7 +29,7 @@
       }
     }
   }
-  .mobile-menu-container {
+  .mobile_menu_container {
     font-size: 0;
     position: fixed;
     z-index: 100;
@@ -100,7 +100,7 @@
         padding-left: 10px;
       }
     }
-    .level-a {
+    .level_a {
       > li {
         border-bottom: 1px solid lighten($menu, 5%);
         > a {
@@ -116,9 +116,9 @@
       }
     }
   }
-  /* resp-menu-active
+  /* resp_menu_active
 ========================================================================== */
-  .mobile-menu-active {
+  .mobile_menu_active {
     overflow: hidden;
     &:before {
       position: absolute;
@@ -137,7 +137,7 @@
         z-index: 101;
       }
     }
-    .mobile-menu-container {
+    .mobile_menu_container {
       opacity: 1;
       @include transform (translateX(0));
     }

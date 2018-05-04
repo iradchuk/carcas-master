@@ -6,13 +6,13 @@
                 Copyright &copy; <?php echo date( "Y" ); ?> <?php the_field( 'copyright', 'options' ); ?>
             </div>
 		<?php endif; ?>
-        <div class="s-link">
+        <div class="s_link">
 			<?php get_template_part( 'components/social', 'icons' ); ?>
         </div>
     </div>
 </footer>
 <a href="#" class="burger desctop_hide"><span class="burger-icon "></span></a>
-<div class="mobile-menu-container desctop-hide cfx">
+<div class="mobile_menu_container desctop_hide cfx">
     <nav class="mobile_nav">
 		<?php
 		$mobile_nav = array(

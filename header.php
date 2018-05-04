@@ -17,13 +17,13 @@
 <body <?php body_class(); ?> >
 <div id="wrap">
     <header class="header">
-        <div class="row alc">
+        <div class="row flex align_center ">
             <a href="<?php echo site_url(); ?>/" id="logo">
 				<?php if ( get_field( 'logo', 'options' ) ): ?>
                     <img src="<?php the_field( 'logo', 'options' ); ?>" alt="logo">
 				<?php endif; ?>
             </a>
-            <nav class="main-nav  mobile-hide">
+            <nav class="main_nav  mobile_hide">
 				<?php
 				$main_nav = array(
 					'theme_location' => 'main_menu',
