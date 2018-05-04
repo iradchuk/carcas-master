@@ -92,11 +92,11 @@
           background: lighten($menu, 10%);
         }
       }
-      .sub-anchor {
-        display: none !important;
-      }
+      // .sub-anchor {
+      //   display: none !important;
+      // }
       .sub-menu {
-        display: block;
+        display: none;
         padding-left: 10px;
       }
     }
