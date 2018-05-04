@@ -37,12 +37,12 @@
     content: ' ';
   }
 }
-.bg_center {
+.bg-center {
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
 }
-.no_select {
+.no-select {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -281,78 +281,83 @@ div.wpcf7 .ajax-loader.is-active {
 /* ==========================================================================
    SOCIAL LINK
    ========================================================================== */
-.s_link {
-  font-size: 0;
-  display: inline-block;
-  width: auto;
+.s-link {
   cursor: pointer;
+  display: inline-block;
+  font-size: 0;
   text-align: center;
+  width: auto;
   a {
-    position: relative;
+    border-radius: 50%;
+    color: #ffffff;
     display: inline-block;
-    width: 40px;
     height: 40px;
     margin: 0 2px;
-    color: #ffffff;
-    border-radius: 50%;
+    position: relative;
+    width: 40px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
     @include transform (translate3d(0, 0, 0));
     @include transition(all, .5s, cubic-bezier(.165, .84, .44, 1));
     @include shadow(1);
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
     &:before {
-      font-size: 20px;
       color: #ffffff;
+      font-size: 20px;
       @include center();
     }
     &:hover {
       @include shadow(3);
     }
-    &.i-c-bk {
+    &.fa-facebook {
       &:hover {
         background: $facebook;
       }
     }
-    &.i-c-tr {
+    &.fa-twitter {
       &:hover {
         background: $twitter;
       }
     }
-    &.i-c-ism {
+    &.fa-instagram {
       &:hover {
         background: $instagram;
       }
     }
-    &.i-c-ln {
+    &.fa-linkedin {
       &:hover {
         background: $linkedin;
       }
     }
-    &.i-c-gp {
+    &.fa-google-plus {
       &:hover {
-        background: $google_plus;
+        background: $google-plus;
       }
     }
-    &.i-c-pr {
+    &.fa-pinterest {
       &:hover {
         background: $pinterest;
       }
     }
-    &.i-c-yb {
+    &.fa-youtube {
       &:hover {
         background: $youtube;
+      }
+    }
+    &.fa-vimeo {
+      &:hover {
+        background: $vimeo;
       }
     }
   }
 }
 /* ==========================================================================
-   index_style
+   index-style
    ========================================================================== */
-.index_style {
-  .post_item {
+.index-style {
+  .post-item {
     margin-bottom: 20px;
   }
-  .post_title {
+  .post-title {
     font-size: 18px;
     display: block;
     padding-bottom: 15px;
@@ -360,7 +365,7 @@ div.wpcf7 .ajax-loader.is-active {
       color: $b;
     }
   }
-  .post_thumbnail {
+  .post-thumbnail {
     min-height: 160px;
     will-change: opacity;
     @include shadow(1);

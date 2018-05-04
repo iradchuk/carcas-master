@@ -1,20 +1,47 @@
 .flex {
   @include flexbox;
-  @include flex-wrap(wrap);
-  @include align-items(stretch);
   @include justify-content(space-between);
-  &.justify_around {
+}
+.start {
+  @include flexbox;
+  @include justify-content(flex-start);
+}
+.end {
+  @include flexbox;
+  @include justify-content(flex-end);
+}
+.around {
+  @include flexbox;
+  @include justify-content(space-around);
+}
+.alc {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(center);
+}
+.alstart {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(flex-start);
+}
+.alend {
+  @include flexbox;
+  @include justify-content(space-between);
+  @include align-items(flex-end);
+}
+.flexbox {
+  @include flexbox();
+  &.justify-around {
     @include justify-content(space-around);
   }
-  &.justify_center, .v_center {
+  &.justify-center {
     @include justify-content(center);
   }
-  &.align_center, .h_center {
+  &.align-center {
     @include align-items(center);
   }
-  .vh_center {
-    @include justify-content(center);
-    @include align-items(center);
+  &.align-end {
+   @include align-items(flex-end); 
   }
 }
 $grid-spacing: 3%;
