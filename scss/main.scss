@@ -25,13 +25,12 @@ $google_plus: #d94733;
 $pinterest: #bd1e23;
 $youtube: #f80000;
 $vimeo: #1ab7ea;
-// Defaul fonts
-$font: 'font_regular', Helvetica, Arial, sans-serif;
-//default italic font
+
 /* FONTS
    ========================================================================== */
 //custom icon fonts
 // @include declare-font('font-name', 'font-layout', 'font-weight', 'font-style');
+$font: 'font_regular', Helvetica, Arial, sans-serif;
 /* MAIN  FILES
    ========================================================================== */
 @import 'components/01_reset';
