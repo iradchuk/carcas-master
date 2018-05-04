@@ -1,7 +1,7 @@
 /* ==========================================================================
    HELPERS
    ========================================================================== */
-.row {
+.row { 
   position: relative;
   width: $row;
   max-width: 100%;
@@ -37,12 +37,12 @@
     content: ' ';
   }
 }
-.bg_center {
+.bg-center {
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
 }
-.no_select {
+.no-select {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -281,7 +281,7 @@ div.wpcf7 .ajax-loader.is-active {
 /* ==========================================================================
    SOCIAL LINK
    ========================================================================== */
-.s_link {
+.s-link {
   font-size: 0;
   display: inline-block;
   width: auto;
@@ -346,13 +346,13 @@ div.wpcf7 .ajax-loader.is-active {
   }
 }
 /* ==========================================================================
-   index_style
+   index-style
    ========================================================================== */
-.index_style {
-  .post_item {
+.index-style {
+  .post-item {
     margin-bottom: 20px;
   }
-  .post_title {
+  .post-title {
     font-size: 18px;
     display: block;
     padding-bottom: 15px;
@@ -360,7 +360,7 @@ div.wpcf7 .ajax-loader.is-active {
       color: $b;
     }
   }
-  .post_thumbnail {
+  .post-thumbnail {
     min-height: 160px;
     will-change: opacity;
     @include shadow(1);

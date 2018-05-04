@@ -1,10 +1,5 @@
-<aside class="index_aside col-3 sm-12">
-	<?php if ( is_active_sidebar( 'aside_widget' ) ) : ?>
-        <div class="aside_box">
-			<?php dynamic_sidebar( 'aside_widget' ); ?>
-        </div>
-	<?php endif; ?>
-    <div class="aside_box">
+<aside class="index-aside col-3 sm-12">
+    <div class="aside-box">
         <h3>Popular categories</h3>
         <ul>
 			<?php
@@ -29,7 +24,7 @@
 			?>
         </ul>
     </div>
-    <div class="aside_box">
+    <div class="aside-box">
         <h3>Archive by month</h3>
         <ul>
 			<?php
@@ -47,7 +42,7 @@
 			wp_get_archives( $post_archive ); ?>
         </ul>
     </div>
-    <div class="aside_box">
+    <div class="aside-box">
         <h3>Recent Post </h3>
         <ul id="catnav">
 			<?php

@@ -1,8 +1,8 @@
 <?php get_header();
 global $post; ?>
     <div id="content" class="row flex">
-        <main class="index_main">
-            <h1 class="post_title"><?php the_title(); ?></h1>
+        <main class="index-main">
+            <h1 class="post-title"><?php the_title(); ?></h1>
 		
 		 <span class="category">
                    <?php the_category(', '); ?>

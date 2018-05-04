@@ -13,10 +13,6 @@ $(document).ready(function () {
 //         disable: 'mobile',
     // anchor: 'top-bottom'
 //     });
-    
-});
-/* end ready*/
-$(window).on('load', function () {
     //swiper_example
     // var swiper_example = new Swiper('.swiper_example', {
     //     loop: true,
@@ -40,3 +36,4 @@ $(window).on('load', function () {
     //     }
     // });
 });
+/* end ready*/
