@@ -47,28 +47,27 @@ input, textarea, select {
 }
 input[type='text'], input[type='number'], input[type='email'], input[type='password'], input[type='search'], input[type='tel'], textarea {
   border: 1px solid #e1e1e1;
+  background: #fff;
   color: #222222;
-  font-family: $regular;
+  font-family: $font;
   font-size: 16px;
-  height: 40px;
+  height: $inputH;
   padding: 0 5px 0 10px;
   width: 100%;
   @include placeholder {
     color: #4c4c4c;
-    font-family: $regular;
+    font-family: $font;
     font-size: 16px;
     opacity: 1;
   }
   &:focus {
-    border-color: transparent !important;
-    box-shadow: 0 0 3px $a !important;
-    outline-color: $a !important;
+    border-color: $bg;
   }
 }
 textarea {
-  height: 120px;
-  padding-top: 10px;
   resize: none;
+  height: 100px;
+  padding: 10px;
 }
 button[disabled], html input[disabled] {
   cursor: default;
