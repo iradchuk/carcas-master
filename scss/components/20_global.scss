@@ -41,6 +41,7 @@
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .no-select {
   -webkit-user-select: none;
@@ -177,45 +178,61 @@
   }
 }
 /* ==========================================================================
-   CONTACT FORM 7
+   FULL FRAME
    ========================================================================== */
-.wpcf7 {
-  width: 100%;
-  .screen-reader-response {
-    display: none;
-  }
-  .wpcf7-not-valid-tip {
-    font: 500 14px/1 $font;
+.fullframe {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 56.5%;
+  position: relative;
+  z-index: 0;
+  iframe, object, embed {
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    right: 0;
+    width: 100%;
+    z-index: -1
+  }
+}
+/* ==========================================================================
+   CONTACT FORM 7
+   ========================================================================== */
+div.wpcf7 {
+  .wpcf7-form-control-wrap {
+    display: block !important;
+    margin-bottom: 20px;
+    clear: both;
+  }
+  .wpcf7-not-valid-tip {
+    background: #fff;
+    border: 1px solid #FF0000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
     left: 0;
-    text-align: center;
-    color: #ff5f5f;
-    background: #eeeeee;
+    right: 0;
+    cursor: pointer;
+    font-family: $font;
+    height: $inputH;
+    line-height: $inputH;
+    padding: 0 10px;
+    text-align: left;
   }
   .wpcf7-response-output {
-    display: none;
     width: 100%;
-    max-width: 300px;
-    margin: 20px auto;
-    padding: 15px 20px;
-    cursor: pointer;
+    background: #fff;
+    margin: 10px 0 0 0;
+    font-family: $font;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 5px 20px;
     text-align: center;
-    color: white;
-    background: #ff5f5f;
-    &.wpcf7-mail-sent-ng {
-      background: #1091ae;
-    }
-    &.wpcf7-mail-sent-ok {
-      background: #16a085;
-    }
   }
-  .wpcf7-form-control-wrap {
-    position: relative;
-    display: block !important;
-  }
-
+  // .ajax-loader {
+  //   display: none;
+  // }
 }
 div.wpcf7 .ajax-loader {
   visibility: hidden;
