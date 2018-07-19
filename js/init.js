@@ -13,10 +13,6 @@ $(document).ready(function () {
 //         disable: 'mobile',
     // anchor: 'top-bottom'
 //     });
-    if (!$(".woocommerce-checkout")[0]) {
-        $("select").selbel();
-        $("select option:first-of-type").attr('selected','true').attr('disabled','disabled').attr('value','0');
-    }
 });
 /* end ready*/
 $(window).on('load', function () {
