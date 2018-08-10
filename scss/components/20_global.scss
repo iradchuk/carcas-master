@@ -204,6 +204,7 @@ div.wpcf7 {
     display: block !important;
     margin-bottom: 20px;
     clear: both;
+    position: relative;
   }
   .wpcf7-not-valid-tip {
     background: #fff;
@@ -225,7 +226,7 @@ div.wpcf7 {
     background: #fff;
     margin: 10px 0 0 0;
     font-family: $font;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
     padding: 5px 20px;
     text-align: center;
@@ -233,6 +234,9 @@ div.wpcf7 {
   // .ajax-loader {
   //   display: none;
   // }
+  .wpcf7-display-none {
+    display: none;
+  }
 }
 div.wpcf7 .ajax-loader {
   visibility: hidden;
