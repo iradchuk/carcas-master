@@ -4,7 +4,6 @@
    ========================================================================== */
 function my_acf_init() {
 	acf_update_setting( 'google_api_key', 'API_KEY' );
-	acf_update_setting( 'enqueue_select2', false );
 }
 
 add_action( 'acf/init', 'my_acf_init' );
