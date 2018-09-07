@@ -199,44 +199,46 @@
 /* ==========================================================================
    CONTACT FORM 7
    ========================================================================== */
-div.wpcf7 {
-  .wpcf7-form-control-wrap {
-    display: block !important;
-    margin-bottom: 20px;
-    clear: both;
-    position: relative;
-  }
-  .wpcf7-not-valid-tip {
-    background: #fff;
-    border: 1px solid #FF0000;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    font-family: $font;
-    height: $inputH;
-    line-height: $inputH;
-    padding: 0 10px;
-    text-align: left;
-  }
-  .wpcf7-response-output {
-    width: 100%;
-    background: #fff;
-    margin: 10px 0 0 0;
-    font-family: $font;
-    font-size: 14px;
-    line-height: 20px;
-    padding: 5px 20px;
-    text-align: center;
-  }
-  // .ajax-loader {
-  //   display: none;
-  // }
-  .wpcf7-display-none {
+.wpcf7 {
+  width: 100%;
+  .screen-reader-response {
     display: none;
   }
+  .wpcf7-not-valid-tip {
+    font: 500 16px/1 $font1; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: $inputH;
+    line-height: $inputH;
+    text-align: center;
+    color: #ff5f5f;
+    background: #eeeeee;
+  }
+  .wpcf7-response-output {
+    display: none;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background: #ff5f5f;
+    &.wpcf7-mail-sent-ng {
+      background: #1091ae;
+    }
+    &.wpcf7-mail-sent-ok {
+      background: #16a085;
+    }
+  }
+  .wpcf7-form-control-wrap {
+    position: relative;
+    display: block !important;
+  }
+
 }
 div.wpcf7 .ajax-loader {
   visibility: hidden;
@@ -251,6 +253,9 @@ div.wpcf7 .ajax-loader {
   padding: 5px;
   border-radius: 50%;
   margin-left: 10px;
+  position: absolute;
+  top: 50%;
+  @include transform(translate(0,-50%));
 }
 div.wpcf7 .ajax-loader.is-active {
   visibility: visible;
