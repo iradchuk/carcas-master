@@ -418,3 +418,12 @@ div.wpcf7 .ajax-loader.is-active {
     background: $a;
   }
 }
+
+#top {
+  min-height: 500px;
+  text-align: center;
+  color: #fff;
+  h1 {
+    font-size: 60px;
+  }
+}
