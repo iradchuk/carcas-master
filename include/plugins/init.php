@@ -29,11 +29,11 @@ function my_theme_register_required_plugins() {
 			'slug'     => 'contact-form-7',
 			'required' => false,
 		),
-		array(
-			'name'     => 'Better Font Awesome',
-			'slug'     => 'better-font-awesome',
-			'required' => false,
-		),
+		// array(
+		// 	'name'     => 'Better Font Awesome',
+		// 	'slug'     => 'better-font-awesome',
+		// 	'required' => false,
+		// ),
 		array(
 			'name'     => 'WP Migrate DB',
 			'slug'     => 'wp-migrate-db',
@@ -115,11 +115,11 @@ function my_theme_register_required_plugins() {
 			'slug'     => 'wp-emmet',
 			'required' => false,
 		),
-		array(
-			'name'     => 'Add Logo to Admin',
-			'slug'     => 'add-logo-to-admin',
-			'required' => false,
-		)
+		// array(
+		// 	'name'     => 'Add Logo to Admin',
+		// 	'slug'     => 'add-logo-to-admin',
+		// 	'required' => false,
+		// )
 	);
 	/*
 	 * Array of configuration settings. Amend each line as needed.

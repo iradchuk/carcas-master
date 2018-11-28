@@ -78,7 +78,7 @@ function getCookie(cname) {
 // @formatter:on
 $(document).ready(function () {
     "use strict";
-    $(".mobile_nav").find('.menu-item-has-children>a').after('<i class="i-down sub-anchor"></i>');
+    $(".mobile_nav").find('.menu-item-has-children>a').after('<i class="icon-closedown-open-mini sub-anchor"></i>');
     $('.burger').click(function () {
         $(this).toggleClass('is-active');
         $("body").toggleClass('mobile_menu_active');
@@ -90,7 +90,7 @@ $(document).ready(function () {
         return false;
     });
     $(".menu-item-has-children i").click(function (event) {
-        $(this).toggleClass('i-up').next().slideToggle("fast");
+        $(this).toggleClass('icon-closedown-open-mini icon-closeup-open-mini').next().slideToggle("fast");
     });
     /*Contact form7 - close validation error on click*/
     $(this).on('mouseenter', '.wpcf7-not-valid-tip', function () {
