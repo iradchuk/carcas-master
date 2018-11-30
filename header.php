@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" href="<?php echo theme(); ?>/img/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="<?php echo theme(); ?>/img/favicon/manifest.json">
     <link rel="mask-icon" href="<?php echo theme(); ?>/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link href="https://file.myfontastic.com/UCh5HgwSYvMAtExGhpHLqd/icons.css" rel="stylesheet">
     <meta name="theme-color" content="#181818">
 	<?php /* end favicon */ ?>
 	<?php wp_head(); ?>
