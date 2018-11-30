@@ -6,23 +6,39 @@
     Selectric source
     https://raw.githubusercontent.com/lcdsantos/jQuery-Selectric/master/public/jquery.selectric.min.js
     Date Picker
-    https://github.com/amsul/pickadate.js/edit/master/lib/compressed/picker.js
+    https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/picker.js
     https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/picker.date.js
     Malihu custom scrollbar
     https://raw.githubusercontent.com/malihu/malihu-custom-scrollbar-plugin/master/js/minified/jquery.mCustomScrollbar.min.js
-    css3animate-it
-    https://raw.githubusercontent.com/Tusko/WP-Anatomy/master/js/libs/css3animate-it.js
+    AOS
+    https://raw.githubusercontent.com/michalsnik/aos/master/dist/aos.js
   ========================================================================== */
 // @formatter:off
-/*clickOff*/$.fn.clickOff = function (callback, selfDestroy) {var clicked = false;var parent = this;var destroy = selfDestroy || true;parent.click(function () {clicked = true;});$(document).click(function (event) {if (!clicked) {callback(parent, event);}if (destroy) {}clicked = false;});};
-function setCookie (name, value, exdays, path, domain, secure) {
+/*clickOff*/
+$.fn.clickOff = function (callback, selfDestroy) {
+    var clicked = false;
+    var parent = this;
+    var destroy = selfDestroy || true;
+    parent.click(function () {
+        clicked = true;
+    });
+    $(document).click(function (event) {
+        if (!clicked) {
+            callback(parent, event);
+        }
+        if (destroy) {
+        }
+        clicked = false;
+    });
+};
+function setCookie(name, value, exdays, path, domain, secure) {
     var d = new Date();
     expires = d.toUTCString(d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)));
     document.cookie = name + "=" + escape(value) +
-    ((expires) ? "; expires=" + expires : "") +
-    ((path) ? "; path=" + path : "") +
-    ((domain) ? "; domain=" + domain : "") +
-    ((secure) ? "; secure" : "");
+        ((expires) ? "; expires=" + expires : "") +
+        ((path) ? "; path=" + path : "") +
+        ((domain) ? "; domain=" + domain : "") +
+        ((secure) ? "; secure" : "");
 }
 function getCookie(cname) {
     var name = cname + "=";
@@ -38,12 +54,12 @@ function getCookie(cname) {
     }
     return "";
 }
- if(!$('body').hasClass('single-product')) {
-   $('a[href*="#"]')
+if (!$('body').hasClass('single-product')) {
+    $('a[href*="#"]')
     // Remove links that don't actually link to anything
         .not('[href="#"]')
         .not('[href="#0"]')
-        .click(function(event) {
+        .click(function (event) {
             // On-page links
             if (
                 location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
@@ -59,7 +75,7 @@ function getCookie(cname) {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 500, function() {
+                    }, 500, function () {
                         // Callback after animation
                         // Must change focus!
                         var $target = $(target);
@@ -67,9 +83,10 @@ function getCookie(cname) {
                         if ($target.is(":focus")) { // Checking if the target was focused
                             return false;
                         } else {
-                            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                             $target.focus(); // Set focus again
-                        };
+                        }
+                        ;
                     });
                 }
             }
@@ -78,7 +95,7 @@ function getCookie(cname) {
 // @formatter:on
 $(document).ready(function () {
     "use strict";
-    $(".mobile_nav").find('.menu-item-has-children>a').after('<i class="icon-closedown-open-mini sub-anchor"></i>');
+    $(".mobile_nav").find('.menu-item-has-children>a').after('<i class="icon-angle-down sub-anchor"></i>');
     $('.burger').click(function () {
         $(this).toggleClass('is-active');
         $("body").toggleClass('mobile_menu_active');
@@ -90,7 +107,7 @@ $(document).ready(function () {
         return false;
     });
     $(".menu-item-has-children i").click(function (event) {
-        $(this).toggleClass('icon-closedown-open-mini icon-closeup-open-mini').next().slideToggle("fast");
+        $(this).toggleClass('icon-angle-down icon-angle-up').next().slideToggle("fast");
     });
     /*Contact form7 - close validation error on click*/
     $(this).on('mouseenter', '.wpcf7-not-valid-tip', function () {
