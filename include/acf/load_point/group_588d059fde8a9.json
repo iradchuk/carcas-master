@@ -177,32 +177,6 @@
                     "max": ""
                 },
                 {
-                    "key": "588d0789d6e57",
-                    "name": "google_plus",
-                    "label": "Google plus",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_588d0789d6e58",
-                            "label": "Url",
-                            "name": "url",
-                            "type": "url",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "https:\/\/plus.google.com\/",
-                            "placeholder": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
                     "key": "588d07b3d6e5b",
                     "name": "youtube",
                     "label": "Youtube",
@@ -228,58 +202,6 @@
                     "min": "",
                     "max": ""
                 },
-                {
-                    "key": "588d07a7d6e59",
-                    "name": "pinterest",
-                    "label": "Pinterest",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_588d07a7d6e5a",
-                            "label": "Url",
-                            "name": "url",
-                            "type": "url",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "https:\/\/pinterest.com\/",
-                            "placeholder": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                {
-                    "key": "588db38b88772",
-                    "name": "vimeo",
-                    "label": "Vimeo",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_588db38b88773",
-                            "label": "Url",
-                            "name": "url",
-                            "type": "url",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "https:\/\/vimeo.com\/",
-                            "placeholder": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                }
             ],
             "min": "",
             "max": "",
