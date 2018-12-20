@@ -24,6 +24,7 @@ $(window).on('load', function () {
     // var swiper_example = new Swiper('.swiper_example', {
     //     loop: true,
     //     speed: 1000,
+    //     slidesPerView: 4,
     //     autoplay: {
     //         delay: 4000
     //     },

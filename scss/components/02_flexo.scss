@@ -4,6 +4,7 @@
 .flex {
   @include flexbox;
   @include justify-content(space-between);
+  @include flex-wrap(wrap);
 }
 .start {
   @include flexbox;
