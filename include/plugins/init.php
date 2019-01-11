@@ -55,8 +55,8 @@ function my_theme_register_required_plugins() {
 		// 	'required' => false,
 		// ),
 		array(
-			'name'     => 'Activity log',
-			'slug'     => 'aryo-activity-log',
+			'name'     => 'Simple History',
+			'slug'     => 'simple-history',
 			'required' => false,
 		),
 		// array(
