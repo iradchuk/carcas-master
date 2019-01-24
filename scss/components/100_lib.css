@@ -13,59 +13,188 @@
     css3animateIt
     https://raw.githubusercontent.com/Tusko/WP-Anatomy/master/style/libs/css3animateIt.min.css
   ========================================================================== */
-
+@charset "UTF-8";
 @font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.eot?51009966');
-  src: url('../font/fontello.eot?51009966#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?51009966') format('woff2'),
-       url('../font/fontello.woff?51009966') format('woff'),
-       url('../font/fontello.ttf?51009966') format('truetype'),
-       url('../font/fontello.svg?51009966#fontello') format('svg');
+  font-family: "fontastic";
+  src:url("../../fonts/fontastic.eot");
+  src:url("../../fonts/fontastic.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/fontastic.woff") format("woff"),
+    url("../../fonts/fontastic.ttf") format("truetype"),
+    url("../../fonts/fontastic.svg#fontastic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
- 
- [class^="icon-close"]:before, [class*=" icon-close"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
+[data-icon]:before {
+  font-family: "fontastic" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
   speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Font smoothing. That was taken from TWBS */
+  line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
- 
-.icon-closedown-open-mini:before { content: '\e810'; }
-.icon-closeup-open-mini:before { content: '\e813'; }
-.icon-closetwitter:before { content: '\f099'; }
-.icon-closefacebook:before { content: '\f09a'; }
-.icon-closelinkedin:before { content: '\f0e1'; }
-.icon-closeyoutube:before { content: '\f167'; }
-.icon-closeinstagram:before { content: '\f16d'; }
-.icon-closepinterest:before { content: '\f231'; }
+[class^="i-"]:before,
+[class*=" i-"]:before {
+  font-family: "fontastic" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.i-angle-down:before {
+  content: "\61";
+}
+.i-angle-up:before {
+  content: "\62";
+}
+.i-fac:before {
+  content: "\63";
+}
+.i-ins:before {
+  content: "\65";
+}
+.i-twi:before {
+  content: "\66";
+}
+.i-lin:before {
+  content: "\67";
+}
+.i-vim:before {
+  content: "\69";
+}
+.i-pin:before {
+  content: "\6a";
+}
+.i-g-plus:before {
+  content: "\6b";
+}
+.i-ios-search:before {
+  content: "\6c";
+}
+.i-android-favorite-outline:before {
+  content: "\68";
+}
+.i-navicon:before {
+  content: "\6e";
+}
+.i-youtube-alt:before {
+  content: "\6d";
+}
+.i-angle-left:before {
+  content: "\64";
+}
+.i-angle-right:before {
+  content: "\6f";
+}
+.i-play-circle:before {
+  content: "\71";
+}
+.i-search:before {
+  content: "\70";
+}
+.i-shopping-cart:before {
+  content: "\72";
+}
+.i-ios-cart-outline:before {
+  content: "\73";
+}
+.i-heart-o:before {
+  content: "\74";
+}
+.i-exchange:before {
+  content: "\75";
+}
+.i-goo-plus:before {
+  content: "\76";
+}
+.i-yelp:before {
+  content: "\77";
+}
+.i-bars:before {
+  content: "\78";
+}
+.i-phone:before {
+  content: "\79";
+}
+.i-search-plus:before {
+  content: "\7a";
+}
+.i-calendar:before {
+  content: "\41";
+}
+.i-caret-down:before {
+  content: "\42";
+}
+.i-caret-left:before {
+  content: "\43";
+}
+.i-caret-right:before {
+  content: "\44";
+}
+.i-caret-up:before {
+  content: "\45";
+}
+.i-chevron-down:before {
+  content: "\46";
+}
+.i-chevron-left:before {
+  content: "\47";
+}
+.i-chevron-right:before {
+  content: "\48";
+}
+.i-chevron-up:before {
+  content: "\49";
+}
+.i-search-minus:before {
+  content: "\4a";
+}
+.i-search-1:before {
+  content: "\4b";
+}
+.i-tumblr:before {
+  content: "\4c";
+}
+.i-youtube:before {
+  content: "\4d";
+}
+.i-youtube-play:before {
+  content: "\4e";
+}
+.i-android-arrow-forward:before {
+  content: "\4f";
+}
+.i-android-arrow-up:before {
+  content: "\50";
+}
+.i-android-arrow-back:before {
+  content: "\51";
+}
+.i-android-arrow-down:before {
+  content: "\52";
+}
+.i-android-favorite:before {
+  content: "\53";
+}
+.i-ios-cart:before {
+  content: "\54";
+}
+.i-ios-arrow-back:before {
+  content: "\55";
+}
+.i-ios-arrow-down:before {
+  content: "\56";
+}
+.i-ios-arrow-forward:before {
+  content: "\57";
+}
+.i-ios-arrow-left:before {
+  content: "\58";
+}
