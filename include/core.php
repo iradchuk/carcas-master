@@ -432,9 +432,10 @@ function sButton( $atts, $content = null ) {
 	extract( shortcode_atts( array(
 		'link'  => '#',
 		'class' => 'none',
+		'target' => 'self'
 	), $atts ) );
 
-	return '<a class="btn ' . $class . '" href="' . $link . '">' . do_shortcode( $content ) . '</a>';
+	return '<a class="btn ' . $class . '" href="' . $link . '" target="' . $target . '">' . do_shortcode( $content ) . '</a>';
 }
 
 add_shortcode( 'button', 'sButton' );
