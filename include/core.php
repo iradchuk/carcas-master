@@ -426,7 +426,7 @@ function image_src( $id, $size = 'full', $background_image = false, $height = fa
 	}
 }
 
-/* Button Shortcode  [button link="#"  class="alignleft"]Align left button[/button]
+/* Button Shortcode  [button link="#"  class="alignleft" target="_blank"]Align left button[/button]
    ========================================================================== */
 function sButton( $atts, $content = null ) {
 	extract( shortcode_atts( array(
