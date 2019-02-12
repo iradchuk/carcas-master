@@ -22,7 +22,7 @@ function my_theme_register_required_plugins() {
 		array(
 			'name'     => 'Classic Editor',
 			'slug'     => 'classic-editor',
-			'required' => true,
+			'required' => false,
 		),
 		/* array(
 			'name'     => 'WooCommerce',
