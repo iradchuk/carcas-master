@@ -16,6 +16,9 @@ if ( have_rows( 'social_icons', 'options' ) ):
       <?php elseif ( get_row_layout() == 'youtube' ): ?>
             <a href="<?php the_sub_field( 'url' ); ?>" class="i-youtube-alt" title="Official Youtube channel"
                target="_blank"></a>
+      <?php elseif ( get_row_layout() == 'yelp' ): ?>
+            <a href="<?php the_sub_field( 'url' ); ?>" class="i-yelp" title="Official Yelp channel"
+               target="_blank"></a>
       <?php endif;
    endwhile;
 else :

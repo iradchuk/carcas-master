@@ -333,27 +333,32 @@ div.wpcf7 .ajax-loader.is-active {
     &:hover {
       @include shadow(3);
     }
-    &.icon-facebook {
+    &.i-fac {
       &:hover {
         background: $facebook;
       }
     }
-    &.icon-twitter {
+    &.i-twi {
       &:hover {
         background: $twitter;
       }
     }
-    &.icon-instagram {
+    &.i-ins {
       &:hover {
         background: $instagram;
       }
     }
-    &.icon-linkedin {
+    &.i-lin {
       &:hover {
         background: $linkedin;
       }
     }
-    &.icon-youtube {
+    &.i-yelp {
+      &:hover {
+        background: $yelp;
+      }
+    }
+    &.i-youtube-alt {
       &:hover {
         background: $youtube;
       }
