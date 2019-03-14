@@ -353,14 +353,29 @@ div.wpcf7 .ajax-loader.is-active {
         background: $linkedin;
       }
     }
+    &.fa-youtube {
+      &:hover {
+        background: $youtube;
+      }
+    }
+    &.fa-pinterest {
+      &:hover {
+        background: $pinterest;
+      }
+    }
+    &.fa-vimeo {
+      &:hover {
+        background: $vimeo;
+      }
+    }
     &.fa-yelp {
       &:hover {
         background: $yelp;
       }
     }
-    &.fa-youtube {
+    &.fa-google-plus {
       &:hover {
-        background: $youtube;
+        background: $google_plus;
       }
     }
   }
