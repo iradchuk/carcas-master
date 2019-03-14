@@ -95,7 +95,7 @@ if (!$('body').hasClass('single-product')) {
 // @formatter:on
 $(document).ready(function () {
     "use strict";
-    $(".mobile_nav").find('.menu-item-has-children>a').after('<em class="i-angle-down sub-anchor"></em>');
+    $(".mobile_nav").find('.menu-item-has-children>a').after('<em class="fa fa-angle-down sub-anchor"></em>');
     $('.burger').click(function () {
         $(this).toggleClass('is-active');
         $("body").toggleClass('mobile_menu_active');
@@ -107,7 +107,7 @@ $(document).ready(function () {
         return false;
     });
     $(".menu-item-has-children em").click(function (event) {
-        $(this).toggleClass('i-angle-down i-angle-up').next().slideToggle("fast");
+        $(this).toggleClass('fa-angle-down fa-angle-up').next().slideToggle("fast");
     });
     /*Contact form7 - close validation error on click*/
     $(this).on('mouseenter', '.wpcf7-not-valid-tip', function () {
