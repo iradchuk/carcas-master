@@ -16,8 +16,17 @@ if ( have_rows( 'social_icons', 'options' ) ):
       <?php elseif ( get_row_layout() == 'youtube' ): ?>
             <a href="<?php the_sub_field( 'url' ); ?>" class="fa fa-youtube" title="Official Youtube channel"
                target="_blank"></a>
+      <?php elseif ( get_row_layout() == 'pinterest' ): ?>
+            <a href="<?php the_sub_field( 'url' ); ?>" class="fa fa-pinterest" title="Official Pinterest channel"
+               target="_blank"></a>
+      <?php elseif ( get_row_layout() == 'vimeo' ): ?>
+            <a href="<?php the_sub_field( 'url' ); ?>" class="fa fa-vimeo" title="Official Vimeo channel"
+               target="_blank"></a>
       <?php elseif ( get_row_layout() == 'yelp' ): ?>
             <a href="<?php the_sub_field( 'url' ); ?>" class="fa fa-yelp" title="Official Yelp channel"
+               target="_blank"></a>
+      <?php elseif ( get_row_layout() == 'google_plus' ): ?>
+            <a href="<?php the_sub_field( 'google_plus' ); ?>" class="fa fa-google-plus" title="Official Yelp channel"
                target="_blank"></a>
       <?php endif;
    endwhile;
