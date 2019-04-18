@@ -46,6 +46,6 @@ $font: 'font_regular', Helvetica, Arial, sans-serif;
 // global elements (buttons, etc..)
 @import 'components/global';
 // style for custom page
+@import 'components/header';
+@import 'components/footer';
 @import 'components/pages';
-// responsive
-@import 'components/responsive';
