@@ -2,14 +2,10 @@
    HELPERS
    ========================================================================== */
 .row { 
-  position: relative;
-  width: $row;
-  max-width: 100%;
   margin: 0 auto;
-  @include for-size(row) {
-    width: 100%;
-    max-width: 94%;
-  }
+  width: $row;
+  max-width: 94%;
+  position: relative;
 }
 #content {
   padding: 40px 0;

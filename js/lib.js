@@ -6,8 +6,7 @@
     Selectric source
     https://raw.githubusercontent.com/lcdsantos/jQuery-Selectric/master/public/jquery.selectric.min.js
     Date Picker
-    https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/picker.js
-    https://raw.githubusercontent.com/amsul/pickadate.js/master/lib/compressed/picker.date.js
+    https://github.com/fengyuanchen/datepicker/blob/master/dist/datepicker.min.js
     Malihu custom scrollbar
     https://raw.githubusercontent.com/malihu/malihu-custom-scrollbar-plugin/master/js/minified/jquery.mCustomScrollbar.min.js
     AOS
