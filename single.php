@@ -5,7 +5,7 @@ global $post; ?>
     <h1 class="post-title"><?php the_title(); ?></h1>
     
     <span class="category">
-      <?php the_category(', '); ?>
+      <?php the_category(', '); ?>ewfew
     </span>
     
     <div class="author">
