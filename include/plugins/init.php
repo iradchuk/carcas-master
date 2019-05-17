@@ -111,18 +111,8 @@ function my_theme_register_required_plugins() {
 		// 	'required' => false,
 		// ),
 		// array(
-		// 	'name'     => 'Wp optimize',
-		// 	'slug'     => 'wp-optimize',
-		// 	'required' => false,
-		// ),
-		// array(
 	 //   'name'     => 'Advanced Custom Fields : CPT Options Pages',
 	 //   'slug'     => 'acf-cpt-options-pages',
-	 //   'required' => false,
-	 //  ),
-	 // array(
-	 //   'name'     => 'Multiple Post Type Order',
-	 //   'slug'     => 'multiple-post-type-order',
 	 //   'required' => false,
 	 //  ),
 		array(
