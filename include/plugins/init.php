@@ -24,11 +24,11 @@ function my_theme_register_required_plugins() {
 			'slug'     => 'classic-editor',
 			'required' => false,
 		),
-		array(
-			'name'     => 'Post Types Order',
-			'slug'     => 'post-types-order',
-			'required' => false,
-		),		
+		// array(
+		// 	'name'     => 'Post Types Order',
+		// 	'slug'     => 'post-types-order',
+		// 	'required' => false,
+		// ),		
 		/* array(
 			'name'     => 'WooCommerce',
 			'slug'     => 'woocommerce',

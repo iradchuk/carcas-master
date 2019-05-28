@@ -578,3 +578,32 @@ div.wpcf7 .ajax-loader.is-active {
     }
   }
 }
+
+.alignleft {
+  float: left;
+  margin: 0 30px 10px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 0 0 10px 30px;
+}
+
+.aligncenter {
+  margin: 0 auto 20px;
+}
+
+.alignnone {
+  margin: 0 0 20px;
+}
+
+@include for-size(1024px) {
+  .alignleft, .aligncenter, .alignright {
+    float: none;
+    margin: 0 auto 20px;
+  }
+
+  .alignnone {
+    margin: 0 0 20px;
+  }
+}
