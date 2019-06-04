@@ -597,6 +597,11 @@ div.wpcf7 .ajax-loader.is-active {
   margin: 0 0 20px;
 }
 
+.block-center {
+  text-align: center;
+  position: relative;
+}
+
 @include for-size(1024px) {
   .alignleft, .aligncenter, .alignright {
     float: none;
