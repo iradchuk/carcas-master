@@ -1,6 +1,6 @@
 <?php get_header();
 global $post; ?>
-<div id="content" class="row flex">
+<div id="content" class="wrap flex">
   <main class="index-main">
     <h1 class="post-title"><?php the_title(); ?></h1>
     

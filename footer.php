@@ -1,6 +1,6 @@
 </div>
 <footer>
-<div class="row">
+<div class="wrap">
 	<?php if ( get_field( 'copyright', 'options' ) ): ?>
 	<div class="copyright">
 		Copyright &copy; <?php echo date( "Y" ); ?> <?php the_field( 'copyright', 'options' ); ?>

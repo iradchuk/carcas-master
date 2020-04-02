@@ -4,7 +4,7 @@ if ( is_home() ) {
 } else {
 	$queryname = 'Archive of ' . get_the_archive_title();
 } ?>
-<div id="content" class="row index-style flex">
+<div id="content" class="wrap index-style flex">
 	<main class="index-main col-9 sm-12 sm-bottom">
 		<?php if ( is_search() ) { ?>
 		<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
