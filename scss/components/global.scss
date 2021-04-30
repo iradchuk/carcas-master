@@ -199,6 +199,17 @@
   .screen-reader-response {
     display: none;
   }
+  .wpcf7-form.invalid {
+    .wpcf7-response-output {
+      display: block;
+    }
+  }
+  .wpcf7-form.sent {
+    .wpcf7-response-output {
+      display: block;
+      background: #16a085;
+    }
+  }
   .wpcf7-not-valid-tip {
     font: 500 16px/1 $font; 
     position: absolute;
@@ -228,7 +239,7 @@
     &.wpcf7-mail-sent-ok {
       background: #16a085;
     }
-  }
+  } 
   .wpcf7-form-control-wrap {
     position: relative;
     display: block !important;
@@ -252,7 +263,7 @@ div.wpcf7 .ajax-loader {
   top: 50%;
   @include transform(translate(0,-50%));
 }
-div.wpcf7 .ajax-loader.is-active {
+div.wpcf7 form.submitting .ajax-loader {
   visibility: visible;
 }
 //[checkbox checkbox-999 use_label_element exclusive "1" "2" "3"]
